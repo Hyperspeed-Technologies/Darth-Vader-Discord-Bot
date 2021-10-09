@@ -1,0 +1,18 @@
+{
+  "name": "darthvaderdiscordbot",
+  "version": "1.0.0",
+  "description": "Darth Vader is a starwars themed multipurpose discord bot with usefull moderation functionalities, and lots of commands.",
+  "main": "index.ts",
+  "repository": "https://github.com/Fransua0206/DarthVaderDiscordBotV1.git",
+  "author": "Francisco <frangc0206@gmail.com>",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "wokcommands": "^1.5.1"
+  }
+}
