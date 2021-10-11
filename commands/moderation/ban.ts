@@ -47,7 +47,7 @@ export default {
 
         const kickedEmbed = new MessageEmbed()
         .setColor('GREEN')
-        .setDescription(`Banned member ${target?.user.username}`)
+        .setDescription(`Banned member <@${target?.id}>`)
         .setFooter(`Quote: ${getQuote()}`)
 
         const cancelledEmbed = new MessageEmbed()
