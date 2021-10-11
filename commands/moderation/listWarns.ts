@@ -48,7 +48,7 @@ export default {
             guildId: interaction.guild?.id
         })
 
-        if (!results) {
+        if (results.warns.length === 0) {
             interaction.reply({
                 embeds: [noWarnEmbed]
             })
@@ -57,7 +57,8 @@ export default {
         const warnings: Array<warnInterface> = results.warns
 
         await warnings.forEach(warn => {
-            listWarnsEmbed.addField(`Warn ID: ${warn.warningId} || Moderator: <@${warn.moderatorId}>`, `${warn.reason}`)
+            const moderator = interaction.guild?.members.cache.get(warn.moderatorId)
+            listWarnsEmbed.addField(`⚠ Warn ID: ${warn.warningId} || Moderator: ${moderator?.user.username!}`, `${warn.reason}`)
         });
 
         interaction.reply({
