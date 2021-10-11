@@ -6,6 +6,7 @@ export default {
     category: 'Moderation',
     description: 'Deletes the amount of messages selected',
     expectedArgs: '<number of messages to be deleted>',
+    requiredPermissions: ['MANAGE_MESSAGES'],
     minArgs: 1,
     hidden: false,
     testOnly: true,
