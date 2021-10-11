@@ -1,5 +1,4 @@
 import { Client } from "discord.js";
-import { IFeatureConfig } from "wokcommands";
 
 export default (client: Client) => {
     const statusOptions = [
@@ -32,6 +31,6 @@ export default (client: Client) => {
 const config = {
     displayName: 'Status Changer',
     dbName: 'STATUS_CHANGER'
-} as IFeatureConfig
+}
 
 export { config }
