@@ -32,35 +32,69 @@ export default {
         const user = interaction.options.getUser('user')
         const warningId = interaction.options.getString('warning-id')
 
-        
+        const results = await warnSchema.findOne({
+            userId: user?.id,
+            guildId: interaction.guild?.id,
+        })
 
-        // const warnObject = {
-        //     warningId: getWarnId(),
-        //     reason: reason,
-        //     moderatorId: interaction.user.id,
-        //     timestamp: new Date()
-        // }
+        //console.log(results)
+
+        const noResultsEmbed = new MessageEmbed()
+            .setColor('YELLOW')
+            .setDescription(`Couldn't find any user by that name in the database or there is no warning with id: \`\`${warningId}\`\` that matches with the user.`)
+            .setFooter(`Quote: ${getQuote()}`)
+
+        if (!results) {
+            interaction.reply({
+                embeds: [noResultsEmbed]
+            })
+            return
+        }
 
         const removedWarn = new MessageEmbed()
-        .setColor('GREEN')
-        .setDescription(`Removed warning with id: \`\`${warningId}\`\` from <@${user?.id}>`)
-        .setFooter(`Quote: ${getQuote()}`)
+            .setColor('GREEN')
+            .setDescription(`Removed warning with id: \`\`${warningId}\`\` from <@${user?.id}>`)
+            .setFooter(`Quote: ${getQuote()}`)
 
-        await warnSchema.findOneAndUpdate({
-            userId: user?.id,
-            guildId: interaction.guild?.id
-        }, {
-            $pull: {
-                warns: {
-                    warningId: warningId
+        const noWarnEmbed = new MessageEmbed()
+            .setColor('YELLOW')
+            .setDescription(`<@${user?.id}> does not have any warning`)
+
+
+
+        try {
+            await warnSchema.findOneAndUpdate({
+                userId: user?.id,
+                guildId: interaction.guild?.id,
+            }, {
+                $pull: {
+                    warns: {
+                        warningId: warningId
+                    }
                 }
-            }
-        }, {
-            upsert: true
-        })
-        
-        interaction.reply({
-            embeds: [removedWarn]
-        })
+            }, {
+                upsert: true
+            })
+
+            await interaction.reply({
+                embeds: [removedWarn]
+            })
+
+        } catch (error) {
+            console.log(error)
+        }
+
+
+
+        // No Warn Validation 
+
+
+
+        if (results.warns.length === 0) {
+            interaction.reply({
+                content: `No warnings.`
+            })
+        }
+
     }
 } as ICommand
