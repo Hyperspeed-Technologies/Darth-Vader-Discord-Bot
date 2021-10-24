@@ -10,7 +10,7 @@ export default {
     minArgs: 1,
     hidden: false,
     testOnly: true,
-    guildOnly: true,
+    guildOnly: false,
     slash: true,
     options: [
         {
