@@ -36,7 +36,7 @@ client.on('ready', () => {
         {
             name: 'Utility',
             emoji: '901997087909109800',
-            customEmoje: true
+            customEmoji: true
         }
     ])
 })
