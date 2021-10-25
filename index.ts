@@ -32,6 +32,11 @@ client.on('ready', () => {
             name: 'Moderation',
             emoji: '896232699981881384',
             customEmoji: true
+        },
+        {
+            name: 'Utility',
+            emoji: '901997087909109800',
+            customEmoje: true
         }
     ])
 })
