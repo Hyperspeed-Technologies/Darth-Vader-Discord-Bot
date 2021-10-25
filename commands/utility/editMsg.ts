@@ -2,7 +2,7 @@ import { ICommand } from "wokcommands";
 import DJS, { Message, MessageEmbed, TextChannel } from 'discord.js'
 
 export default {
-    category: 'Moderation',
+    category: 'Utility',
     description: 'Edits the selected message',
     expectedArgs: '<Channel Tag> <Message Id> <New Text>',
     requiredPermissions: ['MANAGE_MESSAGES'],
