@@ -37,6 +37,12 @@ client.on('ready', () => {
             name: 'Utility',
             emoji: '901997087909109800',
             customEmoji: true
+        },
+        {
+            name: 'Owner',
+            emoji: '902017616296693810',
+            customEmoji: true,
+            hidden: true
         }
     ])
 })
