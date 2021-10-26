@@ -27,6 +27,13 @@
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
+"@lavacord/discord.js@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@lavacord/discord.js/-/discord.js-0.0.7.tgz#8ba1e944cb5853693a72274ead66798a79e1c07a"
+  integrity sha512-EJ3Jz7Eeepbb+fTirLmVGRshtACuzkhDFccR+6hrTRAmEV9P3dFsfbCtsZfLhRa2j2geJ73VqpjfiJmml0AMuQ==
+  dependencies:
+    lavacord "1.1.9"
+
 "@sapphire/async-queue@^1.1.5":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.1.5.tgz#2a52774ad9c24b1e9be88f4a211e735419014e4e"
@@ -66,6 +73,13 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
+axios@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
+  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
+  dependencies:
+    follow-redirects "^1.14.4"
 
 base64-js@^1.3.1:
   version "1.5.1"
@@ -157,6 +171,11 @@ dotenv@^8.2.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
+follow-redirects@^1.14.4:
+  version "1.14.4"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
+  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+
 ieee754@^1.1.13:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -171,6 +190,14 @@ kareem@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
   integrity sha512-STHz9P7X2L4Kwn72fA4rGyqyXdmrMSdxqHx9IXon/FXluXieaFA6KJ2upcHAHxQPQ0LeM/OjLrhFxifHewOALQ==
+
+lavacord@1.1.9, lavacord@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/lavacord/-/lavacord-1.1.9.tgz#e7e355f969eb082a36e20814fdc6a9b01f3f81a1"
+  integrity sha512-haZghbblO1w3Hodc9q63ZWgV5zA/jB6xFKS17fImK5aIdn0PkKuZ6AsJBxMFpR275v8GNYOxg6cTQBYBQ+batQ==
+  dependencies:
+    node-fetch "^2.6.0"
+    ws "^7.3.0"
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
@@ -247,7 +274,7 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-node-fetch@^2.6.1:
+node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
   integrity sha512-mmlIVHJEu5rnIxgEgez6b9GgWXbkZj5YZ7fx+2r94a2E+Uirsp6HsPTPlomfdHtpt/B0cdKviwkoaM6pyvUOpQ==
@@ -366,6 +393,11 @@ wokcommands@^1.5.1:
     discord.js "^13.1.0"
     dotenv "^8.2.0"
     mongoose "^6.0.10"
+
+ws@^7.3.0:
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
+  integrity sha512-BAkMFcAzl8as1G/hArkxOxq3G7pjUqQ3gzYbLL0/5zNkph70e+lCoxBGnm6AW1+/aiNeV4fnKqZ8m4GZewmH2w==
 
 ws@^8.2.3:
   version "8.2.3"
