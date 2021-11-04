@@ -7,8 +7,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -17,11 +15,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
-
-
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -44,9 +37,12 @@
   </p>
 </div>
 
+<div align="center">
+
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/fransua0206/DarthVaderDiscordBotV1?style=for-the-badge)
 
-
+![Github license](https://img.shields.io/github/license/fransua0206/DarthVaderDiscordBotV1?label=license&style=for-the-badge)
+</div>
 
 <!-- TABLE OF CONTENTS
 <details>
@@ -74,18 +70,17 @@
   </ol>
 </details> -->
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
+## About The Project
 
 Darth vader discord bot is a Star Wars themed discord bot with lots of cool features such as information from each single character from the Star Wars saga and all of the commands you may need to run a successful discord server
 
 Here's why you should choose us:
-* 99% uptime
-* The bot is built with the latest technology
-* Bot is constantly updated to keep up to date with new technologies
+
+- 99% uptime
+- The bot is built with the latest technology
+- Bot is constantly updated to keep up to date with new technologies
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
@@ -96,11 +91,12 @@ Here's why you should choose us:
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Typescript](https://www.typescriptlang.org/)
-* [MongoDB](https://www.mongodb.com/)
-* [NodeJS](https://nodejs.org/)
-* [DiscordJS](https://discord.js.org/#/)
+<!-- * [Typescript](https://www.typescriptlang.org/) -->
 
+- ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+<!-- * [DiscordJS](https://discord.js.org/#/) -->
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
@@ -121,8 +117,6 @@ We as developers of Darth Vader Discord Bot highly discourage that anyone tries 
 
 <!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
 
@@ -139,16 +133,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 <!-- ## Contact
@@ -158,8 +149,6 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 <!-- ## Acknowledgments
@@ -177,10 +166,9 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#top">back to top</a>)</p> -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
