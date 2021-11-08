@@ -44,7 +44,13 @@ client.on('ready', () => {
             emoji: '902017616296693810',
             customEmoji: true,
             hidden: true
-        }
+        },
+        {
+            name: 'Economy',
+            emoji: '905911328726741023',
+            customEmoji: true,
+            // hidden: true
+        },
     ])
 })
 
