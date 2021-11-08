@@ -36,7 +36,6 @@ export default {
     const noMessageEmbed = new MessageEmbed()
       .setColor("RED")
       .setDescription("There are no messages to be deleted.")
-      .setFooter(`Darth Vader Quote: ${getQuote()}`);
 
     const tooMuchMsg = new MessageEmbed()
       .setColor("YELLOW")
